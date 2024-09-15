@@ -1,0 +1,315 @@
+// ----------------- Variable Declaration-----------------
+
+
+$color1 : #4f75b4;
+$color1H : #3cc5cf; ;
+$color2 : #4f75b4  ;
+$color3 : #fff ; 
+
+
+
+
+// -----------------COMMON CLASSES-----------------
+
+
+
+
+
+// -----------------SECTION CLASSES ------------------
+.Hero{ 
+    h1{ 
+        color: white;
+    }
+
+    .slick-arrow  {
+        display: none !important; 
+    }
+
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    .yellow-btn{ 
+        background-color: $color2;
+        color: $color3; 
+        text-decoration: none; 
+        cursor: pointer;
+        padding: 8px 18px;
+        border-radius: 8px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        border: 0; 
+        box-shadow: 0px 0px 9px 0px rgba(120, 190, 211, 0.75);
+        padding-top: 12px;
+        transition: 300ms ease-in ;
+        &:hover{ 
+            background: #ffc061;
+            color: #fffaf2;
+        }
+    }
+    
+    .slide-content{ 
+        width: 68%; 
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        min-height:68vh;
+        text-align: center;
+    }
+    .slide-1{ 
+        background:linear-gradient(0deg, rgba(0, 47, 255, 0.3), rgba(0, 217, 255, 0.3)), url("../../assets//images/dubai-image-1.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slide-2{ 
+        background:linear-gradient(0deg, rgba(0, 47, 255, 0.3), rgba(0, 217, 255, 0.3)), url("../../assets//images/himalayas.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slide-3{ 
+        background:linear-gradient(0deg, rgba(0, 47, 255, 0.3), rgba(0, 217, 255, 0.3)), url("../../assets//images/northindia.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.Tours{ 
+    text-align: center;
+
+    .slick-dots li button:before {
+       display: none;
+    }
+    .slick-arrow  {
+        display: none !important; 
+    }
+  
+    h1{ 
+        color: $color2;
+    }
+    .card{ 
+        text-align: left;
+        box-shadow: 0px 4px 18px -5px rgba(153,153,153,1);
+        .content-div{ 
+            text-align: center;
+            width: 90%; 
+            margin: auto; 
+            margin-top: -24px;
+            .destination_hdr{ 
+                background-color: #fff;
+                padding:  10px;
+        
+                h4{ 
+                    font-weight: 600;
+                    line-height: 1;
+                    margin: 0;
+                }
+            }
+            .offer_div{ 
+                background-color: $color1;
+                padding:  10px;
+            
+                h5{ 
+                    color: $color3;
+                    margin: 0;
+                }
+            }
+        }
+
+        .rating_h4{ 
+            color: #FFC451;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .description_p{ 
+            color: #535353;
+        }
+        .seamore_btn{ 
+            border-radius: 6px;
+            border: 1px solid $color1;
+            color: $color1;
+            background-color: $color3;
+            line-height: 36px;
+            height: 36px;
+            margin-left: auto;
+            width: 120px;
+        }
+
+    }
+}
+
+.Booking{ 
+    position: relative;
+    .booking-card{ 
+        background: $color3;
+        width: 60%; 
+        border: 1px solid rgb(230, 230, 230);
+        padding: 18px 24px;
+        margin: auto;
+        margin-top: -40px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 43px 0px rgba(212,212,212,0.7);
+        h2{ 
+            width: 284px;
+            color: $color2;
+            font-weight: 400;
+            font-size: 26px;
+        }
+        .yellow-btn{ 
+            background-color: $color2;
+            color: $color3;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 8px 18px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            box-shadow: 0px 0px 9px 0px rgba(120, 190, 211, 0.75);
+            padding-top: 12px;
+            transition: 300ms ease-in;
+        }
+
+        label{ 
+            font-size: 14px;
+            color: #929090;
+        }
+        .options{ 
+            border: 0;
+            border-bottom: 1px solid #929090;
+            &:active, &:focus { 
+                outline: 0;
+            }
+            &:focus-visible { 
+                border: 1px solid #929090;
+                border-radius: 4px;
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        .booking-card{ 
+            width: 96%;
+            padding: 40px 28px;
+        }
+    }
+
+    .dateselector{ 
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #929090;
+        &:focus-visible{ 
+            outline: 1px #929090;
+          
+        }
+    }
+}
+
+.Services{ 
+background: url("../../assets/images/servicesBG.jpg");
+background-size: cover; 
+background-repeat: no-repeat;
+color: #fff;
+padding-top: 68px;
+padding-bottom: 28px;
+position: relative;
+&::after {
+    content: "";
+    width: 40%;
+    height: 100%;
+    background:  url("../../assets/images/airplane.png")  no-repeat;
+    background-size: 100%;
+    top: -20px;
+    right: 0px;
+    position: absolute;
+    display: inline-block;
+    }
+
+    .w-80{ 
+        width: 80%;
+        ul{ 
+            margin-bottom: 0;
+            li{ 
+                font-size: 20px;
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        .w-80{ 
+            width: 100%;
+            margin: auto;
+            ul{ 
+                li{ 
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+.Review{ 
+    text-align: left;
+    h5{ 
+        color: $color1; 
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    h1{ 
+        font-size: 36px;
+        color: $color2;
+    }
+    .grey_text{ 
+        color: #929090;
+    }
+
+    .card-review{ 
+        padding: 18px 12px;
+        box-shadow: 0px 4px 18px -5px rgba(153,153,153,1);
+    }
+    
+}
+
+.Planning{ 
+    text-align: center;
+    padding: 80px 0 200px 0; 
+    background: url("../../assets/images/planning_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    h1{ 
+        color: $color2;
+    }
+    p{ 
+        font-size: 16px;
+    }
+    button{ 
+        background: $color1; 
+        color: $color3; 
+        border: 0; 
+        line-height: 40px; 
+        height: 40px;
+        padding: 0px 18px;
+        border-radius: 4px;
+        transition: all 200ms ease-in;
+        &:hover{ 
+            background: $color1H;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .services{ 
+        padding-top: 44px;
+        padding-bottom: 16px;
+    }
+}
+
+

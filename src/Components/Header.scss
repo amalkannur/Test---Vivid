@@ -1,0 +1,38 @@
+.header{ 
+    background: #fff;
+    padding: 0 16px ;
+    .header-logo{ 
+        width: 60%;
+    }
+    .parent-pages{ 
+        justify-content: end;
+        .pages{ 
+            display: flex; 
+            padding: 0; 
+            list-style: none;
+            .pages-child{ 
+                padding: 12px 20px;
+                font-weight: 400; 
+                min-width: 148px;
+                
+
+                a{ 
+                    color: black; 
+                     text-decoration: none;
+                     transition: all ease-in 200ms;
+                     font-size: 18px;
+                     &:active, &:hover{ 
+                        color: #35B2BA;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            .pages{ 
+                flex-direction: column;
+            }
+        }
+    }
+  
+}

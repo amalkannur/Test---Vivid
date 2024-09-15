@@ -1,0 +1,30 @@
+.contact{ 
+    background: url("../../assets/images/contactPage__bg.png");
+    background-size: cover;
+    padding-top: 48px;
+    text-align: center;
+
+    h5{ 
+        font-size: 18px;
+    }
+    h1{ 
+        text-align: center;
+        color: #484747;
+    }
+
+    form{ 
+        input{ 
+            width: 300px;
+            margin-top: 12px;
+            border: 0;
+            outline: 0;
+            padding: 8px 12px;
+        }
+        input[type="submit"]{ 
+            background: #4f75b4;
+            color: white;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}
