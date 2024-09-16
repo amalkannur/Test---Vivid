@@ -7,6 +7,7 @@ import Contact from "./Pages/contactPage/Contact"
 import Destinations from './Pages/destinationPage/Destinations'
 import Countries from './Pages/countriesPage/Countries'
 import Admin from './Pages/adminPage/Admin'
+import Header from './Components/Header'
 
 
 
@@ -14,10 +15,10 @@ import Admin from './Pages/adminPage/Admin'
 function  App() {
   return (
    <div className='main'> 
-    <h1> Test Hosting Line </h1>
+    <h1> Test Hosting Linen2 testing  </h1>
 
-
-
+  
+    <Header />
 
     <Routes>
        <Route index  element ={<Home />} />
