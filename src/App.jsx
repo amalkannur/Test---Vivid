@@ -15,11 +15,26 @@ function  App() {
   return (
    <div className='main'> 
     <h1> Test Hosting Line </h1>
+
+
+
+
+    <Routes>
+       <Route index  element ={<Home />} />
+       <Route path='/home'  element ={ <Home /> } />
+       <Route path='/about'  element ={ <About /> } />
+       <Route path="/destinations" element={<Destinations />} />
+       <Route path='/countries' element={<Countries />} />
+       <Route path= "/contact" element={<Contact />} /> 
+       <Route path='admin-panel' element={<Admin />} />
+      </Routes>
+
+
+
    
-     <Router > 
+     {/* <Router > 
       <Routes > 
-        {/* <Route index  element ={<Home />} /> */}
-       
+        <Route index  element ={<Home />} />
         <Route path='/home'  element ={ <Home /> } />
         <Route path='/about'  element ={ <About /> } />
         <Route path="/destinations" element={<Destinations />} />
@@ -27,7 +42,9 @@ function  App() {
         <Route path= "/contact" element={<Contact />} /> 
         <Route path='admin-panel' element={<Admin />} />
       </Routes>
-   </Router>
+   </Router> */}
+
+
    </div>
   
   )
