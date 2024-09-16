@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
 import Planning from '../homePage/homeChilds/Planning' 
 import "../destinationPage/Destinations.scss"
@@ -13,7 +12,6 @@ function Destinations() {
   return (
 
     <div className='destinations'>
-      <Header />
       <div className="container"> 
         <div className="destination_card "> 
             <h1> GRAB YOUR BEST OFFERS & DEALS BEFORE IT ENDS !! </h1>

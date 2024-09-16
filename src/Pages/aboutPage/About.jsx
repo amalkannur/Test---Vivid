@@ -7,7 +7,6 @@ import abtCarImg from "../../assets/images/abt-carimg.png"
 function About() {
   return (
     <div>
-      <Header />
          <section className='abt-banner'> 
             <div className="row container text-start"> 
               <div className="col-md-6"> 

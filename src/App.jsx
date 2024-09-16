@@ -15,12 +15,9 @@ import Header from './Components/Header'
 function  App() {
   return (
    <div className='main'> 
-    <h1> Test Hosting Linen2 testing  </h1>
-
   
     <Header />
-
-    <Routes>
+      <Routes>
        <Route index  element ={<Home />} />
        <Route path='/home'  element ={ <Home /> } />
        <Route path='/about'  element ={ <About /> } />
@@ -29,23 +26,6 @@ function  App() {
        <Route path= "/contact" element={<Contact />} /> 
        <Route path='admin-panel' element={<Admin />} />
       </Routes>
-
-
-
-   
-     {/* <Router > 
-      <Routes > 
-        <Route index  element ={<Home />} />
-        <Route path='/home'  element ={ <Home /> } />
-        <Route path='/about'  element ={ <About /> } />
-        <Route path="/destinations" element={<Destinations />} />
-        <Route path='/countries' element={<Countries />} />
-        <Route path= "/contact" element={<Contact />} /> 
-        <Route path='admin-panel' element={<Admin />} />
-      </Routes>
-   </Router> */}
-
-
    </div>
   
   )

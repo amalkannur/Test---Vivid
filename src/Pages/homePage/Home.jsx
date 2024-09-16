@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../../Components/Header' 
 import "./Home.scss"
 import Hero from "./homeChilds/Hero"
 import Booking from './homeChilds/Booking'
@@ -14,7 +13,6 @@ import Footer from '../../Components/Footer'
 function Home() {
   return (
     <div>
-      <Header />      
       <Hero />
       <Booking />
       <Tours />

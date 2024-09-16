@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
 import "../contactPage/Contact.scss" 
 
 function Contact() {
   return (
     <div>
-      <Header />
        <div className="contact"> 
          <div className="container"> 
           <h5> FEEL FREE TO </h5>
